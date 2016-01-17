@@ -104,23 +104,23 @@
     var hr = Math.round(min / 60);
     var day = Math.round(hr / 24);
     if (ms < 0) {
-      return 'just now';
+      return '刚刚';
     } else if (sec < 10) {
-      return 'just now';
+      return '刚刚';
     } else if (sec < 45) {
-      return sec + ' seconds ago';
+      return sec + ' 秒前';
     } else if (sec < 90) {
-      return 'a minute ago';
+      return '1分钟前';
     } else if (min < 45) {
-      return min + ' minutes ago';
+      return min + ' 分钟前';
     } else if (min < 90) {
-      return 'an hour ago';
+      return '1小时前';
     } else if (hr < 24) {
-      return hr + ' hours ago';
+      return hr + ' 小时前';
     } else if (hr < 36) {
-      return 'a day ago';
+      return '1天前';
     } else if (day < 30) {
-      return day + ' days ago';
+      return day + ' 天前';
     } else {
       return null;
     }
@@ -135,31 +135,31 @@
     var month = Math.round(day / 30);
     var year = Math.round(month / 12);
     if (ms < 0) {
-      return 'just now';
+      return '刚刚';
     } else if (sec < 10) {
-      return 'just now';
+      return '刚刚';
     } else if (sec < 45) {
-      return sec + ' seconds ago';
+      return sec + ' 秒前';
     } else if (sec < 90) {
-      return 'a minute ago';
+      return '1分钟前';
     } else if (min < 45) {
-      return min + ' minutes ago';
+      return min + ' 分钟前';
     } else if (min < 90) {
-      return 'an hour ago';
+      return '1小时前';
     } else if (hr < 24) {
-      return hr + ' hours ago';
+      return hr + ' 小时前';
     } else if (hr < 36) {
-      return 'a day ago';
+      return '1天前';
     } else if (day < 30) {
-      return day + ' days ago';
+      return day + ' 天前';
     } else if (day < 45) {
-      return 'a month ago';
+      return '1个月前';
     } else if (month < 12) {
-      return month + ' months ago';
+      return month + ' 个月前';
     } else if (month < 18) {
-        return 'a year ago';
+        return '1年前';
     } else {
-      return year + ' years ago';
+      return year + ' 年前';
     }
   };
 
